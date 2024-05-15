@@ -1,0 +1,26 @@
+﻿@miniApi_HostAddress = http://localhost:5206
+@MinimalAPIMicrosoftLearn_HostAddress = http://localhost:5206
+ 
+POST {{MinimalAPIMicrosoftLearn_HostAddress}}/todoitems
+Content-Type: application/json
+ 
+{
+  "name":"Diska",
+  "iscomplete":true
+}
+ 
+###
+ 
+GET {{MinimalAPIMicrosoftLearn_HostAddress}}/todoitems
+ 
+###
+
+PUT http://localhost:5206/todoitems/1
+Content-Type: application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+
+###
